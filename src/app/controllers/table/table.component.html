@@ -1,0 +1,3 @@
+<div *ngFor="let field of fields$ | async; index as i">
+    <app-dummyfield [field]="field" (cambiarButton)="processCambiarButton($event)"></app-dummyfield>
+</div>

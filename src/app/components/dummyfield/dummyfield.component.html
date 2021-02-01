@@ -1,0 +1,13 @@
+<div>
+    <div *ngIf="field.tipoCampo == 'fecha'">
+        <label for="">{{field.nombre}}</label>
+        <input type="date">        
+        <button (click)="cambiar()">Cambiar</button>
+    </div>
+    <div *ngIf="field.tipoCampo == 'string'">
+        <label for="">{{field.nombre}}</label>
+        <input type="text">
+        <button (click)="cambiar()">Cambiar</button>
+    </div>
+    
+</div>
